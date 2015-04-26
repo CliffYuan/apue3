@@ -12,6 +12,7 @@
 #include <stdlib.h>
 #include "process/process.h"
 #include "process_controle/process_controle.h"
+#include "signal/main_signal.h"
 
 int main(int argc, char *argv[]) {
 	//命令行参数
@@ -23,6 +24,9 @@ int main(int argc, char *argv[]) {
     main_process_controle();
 
     main_process();
+
+    //最后执行
+    main_signal();
 
 	return EXIT_SUCCESS;
 }

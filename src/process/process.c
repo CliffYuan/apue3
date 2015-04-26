@@ -14,6 +14,8 @@
 extern char **environ;
 
 void main_process() {
+
+	printf("------------------------process------------------------start\n");
 	//终止处理函数 exit hook
 	atexit_();
 	//设置获取显示环境
@@ -24,7 +26,9 @@ void main_process() {
 	getrlimit_setrlimit();
 
 	//退出函数
-	exit_();
+	//exit_();
+
+	printf("------------------------process------------------------start\n");
 
 }
 //------------------
