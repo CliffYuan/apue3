@@ -10,7 +10,7 @@
 
 void exec_user_signal(){
 
-    printf("current pid=%d\n",getpid());
+    printf("kill current pid=%d\n",getpid());
 
     if(signal(SIGUSR1,signal_usr)==SIG_ERR){
         printf("can't catch SIGUSR1\n");

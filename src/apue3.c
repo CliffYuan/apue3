@@ -13,6 +13,7 @@
 #include "process/process.h"
 #include "process_controle/process_controle.h"
 #include "signal/main_signal.h"
+#include "thread/main_pthread.h"
 
 int main(int argc, char *argv[]) {
 	//命令行参数
@@ -21,12 +22,14 @@ int main(int argc, char *argv[]) {
 		printf("命令行参数argv[%d]:%s\n", i, argv[i]);
 	}
 
-    main_process_controle();
+  //  main_process_controle();
 
-    main_process();
+  //  main_process();
+
+    main_pthread();
 
     //最后执行
-    main_signal();
+  //  main_signal();
 
 	return EXIT_SUCCESS;
 }
